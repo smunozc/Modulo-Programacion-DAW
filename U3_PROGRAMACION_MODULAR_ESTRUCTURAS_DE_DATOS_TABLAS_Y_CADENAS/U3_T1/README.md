@@ -16,6 +16,7 @@ pueden romper aunque haya huecos sueltos suficientes. El funcionamiento del
 programa se ilustra a continuación:
 
 Ejemplo:
+```javascript
 ┌─────────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
 │Mesa no  │  1 │  2 │  3 │  4 │  5 │  6 │  7 │  8 │  9 │ 10 │
 ├─────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
@@ -51,6 +52,7 @@ Lo siento, en estos momentos no queda sitio.
 └─────────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘
 ¿Cuántos son? (Introduzca -1 para salir del programa): -1
 Gracias. Hasta pronto.
+```
 
 * Ejercicio 2
 
