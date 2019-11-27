@@ -1,4 +1,4 @@
-* EJERCICIO 1: (Ej1.java)
+# EJERCICIO 1: (Ej1.java)
 
 Crear un función llamada maxMatriz que:
 
@@ -6,7 +6,7 @@ Reciba como parámetro un vector de enteros bidimensional y
 Devuelva el mayor elemento de esa matríz o vector bidimensional.
 Para probar dicha función se solicitará al usuario el número de filas de la matriz y el número de columnas y se rellenará con enteros aleatorios entre 0 y 1000 dicha matriz (vector bidimensional).
 
-* EJERCICIO 2: (Ej2.java)
+# EJERCICIO 2: (Ej2.java)
 
 Crear una función insertarValor que:
 
@@ -23,7 +23,7 @@ v1 = invertarValor(v,8,3)
 Entonces v1 será {1,2,3,8,4,5}
 ```
 
-* EJERCICIO 3: (Ej3.java)
+# EJERCICIO 3: (Ej3.java)
 
 Escribe una programa que dado un tablero de ajedrez y una posición en el mismo de un alfil nos diga a qué casillas podría saltar un alfil que se encuentra en esa posición:
 
@@ -37,7 +37,7 @@ Introduzca la posición del alfil: d5
 El álfil puede moverse a las siguientes posiciones:
 h1 a2 g2 b3 f3 c4 e4 c6 e6 b7 f7 a8 g8
 
-* EJERCICIO 4: (Ej4.java)
+# EJERCICIO 4: (Ej4.java)
 
 Crea la función filtraPrimos que:
 
@@ -45,7 +45,7 @@ Recibe un array de enteros
 Devuelve un array de enteros con todos los primos que se encuentran en el array origen
 Obviamente el tamaño del array  que se devuelve será de una longitud menor o igual al que se pasa como parámetro. Para facilitar el ejercicio aunque un número primo se repita lo añadiremos al vector.Si no existe ningún número primo en el vector original , se devuelve un array con el número -1 como único elemento.
 
-* EJERCICIO 5: (Ej5.java y VectoresExamen.java)
+# EJERCICIO 5: (Ej5.java y VectoresExamen.java)
 
 Realizar una librería para trabajar con vectores que haremos disposible en nuestor proyecto a través de la clase VectoresExamen. Dicha librería contendrá las siguientes funciones:
 
