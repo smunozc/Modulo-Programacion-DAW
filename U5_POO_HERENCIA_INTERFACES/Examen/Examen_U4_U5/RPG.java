@@ -12,17 +12,29 @@ public class RPG {
 
     //MÉTODOS
 
-
-    public RPG(Personaje[] personajes) {
-        if (personajes.length <= 10) {
-            this.personajes = new Personaje[personajes.length];
-            for (int i = 0; i < personajes.length; i++) {
-                this.personajes[i] = personajes[i];
-                this.contadorPersonajes++;
+    public boolean addPersonaje(Personaje p) {
+        if (personajes!=null) {
+            if (personajes.length==10) {
+                System.out.println("No se pueden añadir más personajes a la partida");
+                return false;
+            } else {
+                //Creo el nuevo vector con la nueva capacidad
+                Personaje[] p1 = new Personaje[personajes.length+1];
+                //Copio lo que tenía
+                for (int i = 0; i <personajes.length ; i++) {
+                    p1[i] = personajes[i];
+                }
+                p1[personajes.length] = p;
+                //Cambio el nuevo por el viejo
+                personajes = p1;
+                return true;
             }
         } else {
-            System.out.printf("La cantidad de personajes no puede ser superior a 10.");
+            personajes = new Personaje[1];
+            personajes[0] = p;
+            return true;
         }
+
     }
 
     public Personaje[] getPersonajes() {
@@ -42,22 +54,22 @@ public class RPG {
     }
 
     public void borrarMuertos() {
-        for (int i = 0; i < this.personajes.length; i++) {
-            if (this.personajes[i].getEnergía() == 0) {
-                this.personajes[i] = this.personajes[this.contadorPersonajes - 1];
-                this.personajes = Arrays.copyOf(this.personajes,this.personajes.length - 1);
-                this.contadorPersonajes--;
+        int numMuertos = 0;
+        //Obtengo el número de
+        for (int i = 0; i < personajes.length ; i++) {
+            if (personajes[i].getEnergia()<=0) {
+                numMuertos++;
             }
         }
-    }
-
-    public void addPersonaje(Personaje p) {
-        if (contadorPersonajes < this.personajes.length) {
-            this.personajes[contadorPersonajes] = p;
-            this.contadorPersonajes++;
-        } else {
-            System.out.println("La capacidad de personajes está al máximo.");
+        Personaje[] p1 = new Personaje[personajes.length-numMuertos];
+        int j=0;
+        for (int i = 0; i < personajes.length ; i++) {
+            if (personajes[i].getEnergia()>0) {
+                p1[j] = personajes[i];
+                j++;
+            }
         }
+        personajes = p1;
     }
 
     @Override
@@ -74,7 +86,7 @@ public class RPG {
         return '\n' + "Estado de la partida: " + '\n' +
                 "Personajes: " + '\n' + Arrays.toString(this.personajes) + '\n' +
                 "Numero de personajes vivos: " + this.contadorPersonajes + '\n' +
-                "---------------------------------------------";
+                "---------------------------------------------" + '\n';
 
     }
 
@@ -87,7 +99,7 @@ public class RPG {
         });
 
         return '\n' + "Personajes ordenados por ataque: " + '\n' +
-                "Personajes: " + '\n' + Arrays.toString(this.personajes);
+                "Personajes: " + '\n' + Arrays.toString(this.personajes) + '\n';
     }
 
     public String mostrarxDefensa() {
@@ -99,14 +111,14 @@ public class RPG {
         });
 
         return '\n' + "Personajes ordenados por defensa: " + '\n' +
-                "Personajes: " + '\n' + Arrays.toString(this.personajes);
+                "Personajes: " + '\n' + Arrays.toString(this.personajes) + '\n';
     }
 
     public String hayGanador() {
         int indiceGanador = 0;
         if (this.contadorPersonajes == 1) {
             for (int i = 0; i < this.personajes.length; i++) {
-                if (this.personajes[i].getEnergía() > 0) {
+                if (this.personajes[i].getEnergia() > 0) {
                     indiceGanador = i;
                 }
             }

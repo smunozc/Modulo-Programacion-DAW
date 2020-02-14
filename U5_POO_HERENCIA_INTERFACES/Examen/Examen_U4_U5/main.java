@@ -5,19 +5,21 @@ public class main {
 
         //Nuevos personajes
         Guerrero guerrero1 = new Guerrero("Uno", 1001, 70, 85, Encantado.NO, 35);
-        Mago mago1 = new Mago("Dos",100,20,0,Encantado.NO,20);
-        Orco orco1 = new Orco("Tres",1000,100,80,Encantado.NO,2);
+        Mago mago1 = new Mago("Magor",100,20,100,Encantado.NO,20);
+        Orco orco1 = new Orco("Orco",1000,100,80,Encantado.NO,2);
         Enano enano1 = new Enano("Gimli",900,80,80,Encantado.NO,100);
-        Elfo elfo1 = new Elfo("Cinco",200,80,0,Encantado.NO,TipoElfo.BOSQUE);
+        Elfo elfo1 = new Elfo("Elis",200,80,0,Encantado.NO,TipoElfo.BOSQUE);
+        Elfo elfo2 = new Elfo("Elis",200,80,0,Encantado.NO,TipoElfo.COSTA);
+        Enano enano2 = new Enano("Ragnar",400,60,10,Encantado.NO,90);
 
-        Personaje[] p = new Personaje[5];
-        p[0] = guerrero1;
-        p[1] = mago1;
-        p[2] = orco1;
-        p[3] = enano1;
-        p[4] = elfo1;
+        RPG partida = new RPG();
+        partida.addPersonaje(guerrero1);
+        partida.addPersonaje(mago1);
+        partida.addPersonaje(orco1);
+        partida.addPersonaje(enano1);
+        partida.addPersonaje(elfo1);
 
-        RPG partida = new RPG(p);
+
         System.out.println(partida.mostrarEstado());
 
         System.out.println("---------------Primer ataque---------------");
@@ -42,7 +44,7 @@ public class main {
         System.out.printf(partida.mostrarxDefensa());
 
 
-
+        System.out.println("Son iguales elfo1 y elfo2: " + elfo1.equals(elfo2));
 
 
 

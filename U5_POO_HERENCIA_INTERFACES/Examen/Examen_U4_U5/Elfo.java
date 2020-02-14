@@ -1,5 +1,7 @@
 package Examen_U4_U5;
 
+import java.util.Objects;
+
 public class Elfo extends Personaje implements Atacar {
 
     //ATRIBUTOS
@@ -25,7 +27,8 @@ public class Elfo extends Personaje implements Atacar {
     @Override
     public String toString() {
         return '\n' + super.toString() + '\n' +
-                "Tipo = " + this.tipo;
+                "Tipo = " + this.tipo + '\n' +
+                "----------------------------" + '\n';
     }
 
     public void atacarPersonaje(Personaje p) {
@@ -35,15 +38,15 @@ public class Elfo extends Personaje implements Atacar {
         } else {
             if (p.getEncantado() == Encantado.NO) {
                 if (this.getCapacidadAtaque() > p.getCapacidadDefensa()) {
-                    p.setEnergía(p.getEnergía() - (this.getCapacidadAtaque() - p.getCapacidadDefensa()));
+                    p.setEnergía(p.getEnergia() - (this.getCapacidadAtaque() - p.getCapacidadDefensa()));
                 } else {
                     System.out.println("No tiene suficiente capacidad de ataque para hacer daño al personaje objetivo.");
                 }
             } else {
                 if (this.getCapacidadAtaque() > p.getCapacidadDefensa()) {
-                    p.setEnergía(p.getEnergía() - ((this.getCapacidadAtaque() - p.getCapacidadDefensa()) * 2));
+                    p.setEnergía(p.getEnergia() - ((this.getCapacidadAtaque() - p.getCapacidadDefensa()) * 2));
                 } else {
-                    p.setEnergía(p.getEnergía() - ( - ((this.getCapacidadAtaque() - p.getCapacidadDefensa()) * 2)));
+                    p.setEnergía(p.getEnergia() - (-((this.getCapacidadAtaque() - p.getCapacidadDefensa()) * 2)));
                 }
             }
         }
@@ -51,6 +54,15 @@ public class Elfo extends Personaje implements Atacar {
 
     @Override
     public int compareTo(Object o) {
-        return this.getEnergía() - ((Personaje) o).getEnergía();
+        return this.getEnergia() - ((Personaje) o).getEnergia();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Elfo elfo = (Elfo) o;
+        return getTipo() == elfo.getTipo();
+    }
+
 }

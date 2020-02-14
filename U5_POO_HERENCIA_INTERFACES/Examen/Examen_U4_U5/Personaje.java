@@ -48,7 +48,7 @@ public abstract class Personaje implements Comparable {
         this.nombre = nombre;
     }
 
-    public int getEnergía() {
+    public int getEnergia() {
         return energía;
     }
 

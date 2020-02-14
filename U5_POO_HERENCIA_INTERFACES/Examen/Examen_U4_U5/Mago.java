@@ -1,5 +1,7 @@
 package Examen_U4_U5;
 
+import java.util.Objects;
+
 public class Mago extends Hombres implements Magia{
 
     //ATRIBUTOS
@@ -24,11 +26,22 @@ public class Mago extends Hombres implements Magia{
     @Override
     public String toString() {
         return '\n' + super.toString() + '\n' +
-                "Longitud de la barba = " + this.longitudBarba;
+                "Longitud de la barba = " + this.longitudBarba + '\n' +
+                "----------------------------" + '\n';
     }
 
     @Override
     public int compareTo(Object o) {
-        return this.getEnergía() - ((Personaje) o).getEnergía();
+        return this.getEnergia() - ((Personaje) o).getEnergia();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Mago mago = (Mago) o;
+        return getLongitudBarba() == mago.getLongitudBarba();
+    }
+
 }
