@@ -12,8 +12,8 @@ public class Main {
         try{
             SAXParserFactory spf = SAXParserFactory.newInstance();
             SAXParser sp = spf.newSAXParser();
-            DefaultHandler personaSAX = new RecorridoSAX();
-            sp.parse(new File("./src/U8_T1_SAX_DOM/Documento.xml"),personaSAX);
+            DefaultHandler recorridoSAX = new RecorridoSAX();
+            sp.parse(new File("./src/U8_T1_SAX_DOM/Documento.xml"),recorridoSAX);
         } catch (Exception e){
             System.out.println("Error: " + e.getCause() + ", " + e.getMessage());
         }
