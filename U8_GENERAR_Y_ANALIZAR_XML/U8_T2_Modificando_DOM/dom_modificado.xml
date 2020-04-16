@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas>
+        
+    <!--Comentario añadido desde DOM-->
+    <persona id="1">
+        <nombre>Juanito</nombre>
+        <apellido>Ortiz</apellido>
+        <edad>20</edad>
+    </persona>
+        
+    <!--Comentario añadido desde DOM-->
+    <persona id="2">
+                
+        <nombre>José</nombre>
+                
+        <apellido>Guzman</apellido>
+                
+        <edad>35</edad>
+            
+    </persona>
+        
+    <!--Comentario añadido desde DOM-->
+    <persona id="3">
+                
+        <nombre>Ester</nombre>
+                
+        <apellido>Torres</apellido>
+                
+        <edad>20</edad>
+            
+    </persona>
+        
+    <!--Comentario añadido desde DOM-->
+    <persona id="4">
+                
+        <nombre>Sergio</nombre>
+                
+        <apellido>Dominguez</apellido>
+                
+        <edad>27</edad>
+            
+    </persona>
+        
+    <!--Comentario añadido desde DOM-->
+    <persona id="5">
+                
+        <nombre>Rodrigo</nombre>
+                
+        <apellido>Gutierrez</apellido>
+                
+        <edad>45</edad>
+            
+    </persona>
+        
+    <!--Comentario añadido desde DOM-->
+    <perro id="1">
+                
+        <nombre>Rufus</nombre>
+                
+        <raza>Rottweiler</raza>
+                
+        <edad>10</edad>
+            
+    </perro>
+        
+    <!--Comentario añadido desde DOM-->
+    <perro id="2"/>
+        
+    <!--Comentario añadido desde DOM-->
+    <gato id="1">
+                
+        <nombre>Michi</nombre>
+                
+        <raza>Siamés</raza>
+                
+        <edad>4</edad>
+            
+    </gato>
+    
+    <persona id="6">
+        <nombre>Falete</nombre>
+        <apellido>Muñoz</apellido>
+        <edad>35</edad>
+    </persona>
+</personas>

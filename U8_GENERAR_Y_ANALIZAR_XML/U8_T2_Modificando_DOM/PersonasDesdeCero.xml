@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas>
+    <Persona ID="0">
+        <nombre>Manolo</nombre>
+        <apellido>Olivares</apellido>
+        <edad>49</edad>
+        <empleo>Director de negocios</empleo>
+    </Persona>
+    <Persona ID="1">
+        <nombre>Manuel</nombre>
+        <apellido>Olivares</apellido>
+        <edad>45</edad>
+        <empleo>Director de negocios</empleo>
+    </Persona>
+    <Persona ID="2">
+        <nombre>Manolito</nombre>
+        <apellido>Olivares</apellido>
+        <edad>30</edad>
+        <empleo>Director de negocios</empleo>
+    </Persona>
+    <Persona ID="3">
+        <nombre>Manuela</nombre>
+        <apellido>Olivares</apellido>
+        <edad>45</edad>
+        <empleo>Bombero</empleo>
+    </Persona>
+    <Persona ID="4">
+        <nombre>Magnolia</nombre>
+        <apellido>Olivares</apellido>
+        <edad>45</edad>
+        <empleo>Director de negocios</empleo>
+    </Persona>
+    <Persona ID="5">
+        <nombre>Pepe</nombre>
+        <apellido>Olivares</apellido>
+        <edad>15</edad>
+        <empleo>Director de negocios</empleo>
+    </Persona>
+    <Persona ID="6">
+        <nombre>Jorge</nombre>
+        <apellido>Olivares</apellido>
+        <edad>25</edad>
+        <empleo>Ornitólogo</empleo>
+    </Persona>
+    <Persona ID="7">
+        <nombre>Marco</nombre>
+        <apellido>Polo</apellido>
+        <edad>55</edad>
+        <empleo>Director de negocios</empleo>
+    </Persona>
+    <Persona ID="8">
+        <nombre>Alvaro</nombre>
+        <apellido>Olivares</apellido>
+        <edad>40</edad>
+        <empleo>Tecnico de Soporte</empleo>
+    </Persona>
+    <Persona ID="9">
+        <nombre>Jose</nombre>
+        <apellido>Barros</apellido>
+        <edad>47</edad>
+        <empleo>Director de negocios</empleo>
+    </Persona>
+</personas>
