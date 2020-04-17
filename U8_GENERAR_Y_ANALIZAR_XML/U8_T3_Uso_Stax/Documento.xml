@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<personas>
+    <persona id="1">
+        <nombre>Manuel</nombre>
+        <apellido>Ortiz</apellido>
+        <edad>19</edad>
+    </persona>
+    <persona id="2">
+        <nombre>José</nombre>
+        <apellido>Guzman</apellido>
+        <edad>35</edad>
+    </persona>
+    <persona id="3">
+        <nombre>Ester</nombre>
+        <apellido>Torres</apellido>
+        <edad>20</edad>
+    </persona>
+    <persona id="4">
+        <nombre>Sergio</nombre>
+        <apellido>Dominguez</apellido>
+        <edad>27</edad>
+    </persona>
+    <persona id="5">
+        <nombre>Rodrigo</nombre>
+        <apellido>Gutierrez</apellido>
+        <edad>45</edad>
+    </persona>
+</personas>
