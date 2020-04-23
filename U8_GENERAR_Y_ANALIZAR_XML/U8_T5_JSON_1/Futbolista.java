@@ -1,17 +1,19 @@
 package UD08_JSON_T1;
 
+import java.util.ArrayList;
+
 public class Futbolista {
     //ATRIBUTOS
     private int dorsal;
     private String nombre;
-    private String[] demarcaciones;
+    private ArrayList<String> demarcaciones;
     private String equipo;
     //MÉTODOS
 
-    public Futbolista(int dorsal, String nombre, String[] demarcaciones, String equipo) {
+    public Futbolista(int dorsal, String nombre, String equipo) {
         this.dorsal = dorsal;
         this.nombre = nombre;
-        this.demarcaciones = demarcaciones;
+        this.demarcaciones = new ArrayList<>();
         this.equipo = equipo;
     }
 
@@ -31,11 +33,11 @@ public class Futbolista {
         this.nombre = nombre;
     }
 
-    public String[] getDemarcaciones() {
+    public ArrayList<String> getDemarcaciones() {
         return demarcaciones;
     }
 
-    public void setDemarcaciones(String[] demarcaciones) {
+    public void setDemarcaciones(ArrayList<String> demarcaciones) {
         this.demarcaciones = demarcaciones;
     }
 
