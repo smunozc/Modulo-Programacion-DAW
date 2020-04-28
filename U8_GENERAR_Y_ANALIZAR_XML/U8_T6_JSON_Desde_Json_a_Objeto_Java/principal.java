@@ -74,7 +74,6 @@ public class principal {
       Type listType = new TypeToken<ArrayList<Futbolista>>(){}.getType();
 
       ArrayList<Futbolista> campeonesNuevo = gson.fromJson(json_completo, listType);
-      ArrayList<String> desmarcaciones = new ArrayList<>();
 
       System.out.println(campeonesNuevo);
 
